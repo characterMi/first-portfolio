@@ -25,7 +25,8 @@ const MyPortfolios = () => {
             backgroundAttachment: "fixed",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-            overflowY: "auto"
+            overflowY: "auto",
+            borderRadius: "0"
         }}>
             <Helmet>
                 <title>
