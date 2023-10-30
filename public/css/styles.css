@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Kalameh';
+    src: url('../fonts/Kalameh-Regular.eot');
+    src: url('../fonts/Kalameh-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Kalameh-Regular.woff2') format('woff2'),
+        url('../fonts/Kalameh-Regular.woff') format('woff'),
+        url('../fonts/Kalameh-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    background-color: #000;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.MuiCard-root::-webkit-scrollbar {
+    display: none;
+}
+
+.MuiGrid2-root::-webkit-scrollbar {
+    display: none;
+}
+
+.MuiBox-root::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    color: gray;
+    font-size: 30px;
+}
