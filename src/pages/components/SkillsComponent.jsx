@@ -130,7 +130,7 @@ const SkillComponent = () => {
 
 
     return (
-        <Grid xs={5}>
+        <Grid xs={6}>
             {Skillsloop.map((value, index) => (
                 <Skills key={index} icon={value.icon} color={value.color} title={value.title} skill={value.skill} />
             ))}

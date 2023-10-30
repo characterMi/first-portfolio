@@ -35,7 +35,6 @@ const Resume = () => (
                 <ParticlesComponent value={secondLinks} />
                 <Grid container>
                     <DeveloperInfo />
-                    <Grid xs={1} />
                     <SkillsComponent />
                 </Grid>
             </Box>
