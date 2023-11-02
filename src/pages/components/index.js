@@ -92,7 +92,7 @@ export const bootstrapSkills = {
 }
 export const sassSkills = {
     icon: sass,
-    color: "error",
+    color: "success",
     title: "Sass"
 }
 export const tailwindSkills = {

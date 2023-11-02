@@ -24,29 +24,29 @@ const SkillComponent = () => {
             setCss((prevValue) => {
                 return Math.min(prevValue + 5, 95)
             });
+            setSass((prevValue) => {
+                return Math.min(prevValue + 5, 80)
+            });
             setJs((prevValue) => {
                 return Math.min(prevValue + 5, 90)
             });
             setTs((prevValue) => {
-                return Math.min(prevValue + 5, 80)
-            });
-            setReact((prevValue) => {
-                return Math.min(prevValue + 5, 95)
-            });
-            setThree((prevValue) => {
-                return Math.min(prevValue + 5, 75)
-            });
-            setNext((prevValue) => {
-                return Math.min(prevValue + 5, 40)
+                return Math.min(prevValue + 5, 70)
             });
             setBootstrap((prevValue) => {
                 return Math.min(prevValue + 5, 90)
             });
-            setSass((prevValue) => {
-                return Math.min(prevValue + 5, 0)
-            });
             setTailwind((prevValue) => {
                 return Math.min(prevValue + 5, 90)
+            });
+            setReact((prevValue) => {
+                return Math.min(prevValue + 5, 90)
+            });
+            setThree((prevValue) => {
+                return Math.min(prevValue + 5, 60)
+            });
+            setNext((prevValue) => {
+                return Math.min(prevValue + 5, 40)
             });
             setGit((prevValue) => {
                 return Math.min(prevValue + 5, 70)

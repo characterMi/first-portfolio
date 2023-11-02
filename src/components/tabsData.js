@@ -52,7 +52,7 @@ export const drawerTabs = () => {
                     <Box component="span" className='icon'>
                         <FaCode />
                     </Box>
-                    <Typography sx={{display: {xs: "none", sm: "block"}, fontSize: "2rem"}} className="item">صفحه اصلی</Typography>
+                    <Typography sx={{ fontSize: "2rem" }} className="item">صفحه اصلی</Typography>
                 </span>
         },
         {
@@ -61,7 +61,7 @@ export const drawerTabs = () => {
                     <Box component="span" className='icon'>
                         <BsReverseLayoutTextWindowReverse />
                     </Box>
-                    <Typography sx={{display: {xs: "none", sm: "block"}, fontSize: "2rem"}} className="item">رزومه من</Typography>
+                    <Typography sx={{ fontSize: "2rem" }} className="item">رزومه من</Typography>
                 </span>
         },
         {
@@ -70,7 +70,7 @@ export const drawerTabs = () => {
                     <Box component="span" className='icon'>
                         <HiOutlineUser />
                     </Box>
-                    <Typography sx={{display: {xs: "none", sm: "block"}, fontSize: "2rem"}} className="item">درباره من</Typography>
+                    <Typography sx={{ fontSize: "2rem" }} className="item">درباره من</Typography>
                 </span>
         },
         {
@@ -79,7 +79,7 @@ export const drawerTabs = () => {
                     <Box component="span" className='icon'>
                         <FaLaptopCode />
                     </Box>
-                    <Typography sx={{display: {xs: "none", sm: "block"}, fontSize: "2rem"}} className="item">نمونه کارها</Typography>
+                    <Typography sx={{ fontSize: "2rem" }} className="item">نمونه کارها</Typography>
                 </span>
         }
     ]
@@ -96,19 +96,19 @@ export const linksData = [
     },
     {
         href: "https://instagram.com/character_mi",
-        icon: <FaInstagram sx={{color: "gray"}} />,
+        icon: <FaInstagram sx={{ color: "gray" }} />,
         name: "Instagram",
         color: "#cc296c"
     },
     {
         href: "https://github.com/characterMi",
-        icon: <FaGithub sx={{color: "gray"}} />,
+        icon: <FaGithub sx={{ color: "gray" }} />,
         name: "Github",
         color: "#2c3456"
     },
     {
         href: "https://t.me/character_mi",
-        icon: <FaTelegram sx={{color: "gray"}} />,
+        icon: <FaTelegram sx={{ color: "gray" }} />,
         name: "Telegram",
         color: "#2481cc"
     }

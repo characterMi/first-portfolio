@@ -18,7 +18,9 @@ const CustomizedDrawer = ({ value, handleChange, setDrawerActive, tabProps }) =>
                         {data.map((tab, index) => (
                             <Tab sx={{
                                 "&.MuiTab-root": {
-                                    height: "90px"
+                                    height: { xs: "70px", sm: "90px" },
+                                    mt: 1,
+                                    mb: 1
                                 },
                                 "& .a:hover": {
                                     transition: "0.2s ease",
