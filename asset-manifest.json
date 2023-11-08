@@ -1,10 +1,13 @@
 {
   "files": {
     "main.css": "/first-portfolio/static/css/main.7f50f5c7.css",
-    "main.js": "/first-portfolio/static/js/main.072bb2a9.js",
+    "main.js": "/first-portfolio/static/js/main.1ac0a7e1.js",
     "static/media/movies.png": "/first-portfolio/static/media/movies.99ae638bf093e642a340.png",
     "static/media/bg02.jpeg": "/first-portfolio/static/media/bg02.c7b412e881812ed15392.jpeg",
     "static/media/threeJs-icon.png": "/first-portfolio/static/media/threeJs-icon.7c862b1bad8407d307b0.png",
+    "static/media/atb-media.png": "/first-portfolio/static/media/atb-media.442958b04eadc12281c7.png",
+    "static/media/coca-cola_zero.png": "/first-portfolio/static/media/coca-cola_zero.b32e182fcc2fa2695b76.png",
+    "static/media/gym-lovers.png": "/first-portfolio/static/media/gym-lovers.0c70cbc5f168ebf29496.png",
     "static/media/hoobank_project.png": "/first-portfolio/static/media/hoobank_project.28a5ad942515b4b787a8.png",
     "static/media/nike-website.png": "/first-portfolio/static/media/nike-website.1c7236781e6182b8bae4.png",
     "static/media/customizable-shirt.png": "/first-portfolio/static/media/customizable-shirt.c486c61593363af014da.png",
@@ -25,10 +28,10 @@
     "static/media/html5-original.svg": "/first-portfolio/static/media/html5-original.8664168d5bc90b1a24396f85aadbf623.svg",
     "static/media/icons8-nextjs.svg": "/first-portfolio/static/media/icons8-nextjs.8708d5f39f59b9ebe9582b447817b539.svg",
     "main.7f50f5c7.css.map": "/first-portfolio/static/css/main.7f50f5c7.css.map",
-    "main.072bb2a9.js.map": "/first-portfolio/static/js/main.072bb2a9.js.map"
+    "main.1ac0a7e1.js.map": "/first-portfolio/static/js/main.1ac0a7e1.js.map"
   },
   "entrypoints": [
     "static/css/main.7f50f5c7.css",
-    "static/js/main.072bb2a9.js"
+    "static/js/main.1ac0a7e1.js"
   ]
 }
