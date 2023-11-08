@@ -89,7 +89,7 @@ export const drawerTabs = () => {
 
 export const linksData = [
     {
-        href: "https://discord.gg/Kzk2raVv",
+        href: "https://discord.gg/yBBwsemQ",
         icon: <FaDiscord />,
         name: "Discord",
         color: "#8293ed"
