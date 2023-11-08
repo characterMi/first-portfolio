@@ -14,6 +14,9 @@ import Admin_panel from "../../assets/pics/admin-panel.png";
 import Customizable_shirt from "../../assets/pics/customizable-shirt.png";
 import Hoobank_project from "../../assets/pics/hoobank_project.png";
 import Nike_website from "../../assets/pics/nike-website.png";
+import Gym_lovers from "../../assets/pics/gym-lovers.png";
+import Youtube_clone from "../../assets/pics/atb-media.png";
+import Coca_Cola from "../../assets/pics/coca-cola_zero.png";
 export { default as DeveloperInfo } from "./DeveloperInfo"
 export { default as SkillsComponent } from "./SkillsComponent"
 export { default as ParticlesComponent } from "./ParticlesComponent"
@@ -48,6 +51,24 @@ export const AllPortfolios = [
         title: "Customizable shirt",
         moreDescription: "اولین پروژه با threeJs و @react-three/fiber. در این سایت شما میتونین یک مدل لباس سه بعدی که در اختیارتون گذاشته شده رو به دلخواه شخصی سازی کنین",
         link: "https://github.com/characterMi/customizable-shirt"
+    },
+    {
+        photo: Gym_lovers,
+        title: "Gym Lovers",
+        moreDescription: "یک اپلیکیشن ورزشی که داده هارو از API میگیره. توی این پروژه از API های سایت RapidApi استفاده شده",
+        link: "https://github.com/characterMi/gym-lovers"
+    },
+    {
+        photo: Youtube_clone,
+        title: "ATB Media",
+        moreDescription: "یک یوتیوب کلون با UI/UX خفن. توی این پروژه هم از API استفاده میشه !",
+        link: "https://github.com/characterMi/atb_media"
+    },
+    {
+        photo: Coca_Cola,
+        title: "Coca-Cola [[Zero]]",
+        moreDescription: "یک پروژه باحال که با threeJs و React ساخته شده و خیلی UI خوبی داره (به این یکی حتما یه سر بزنید ! )",
+        link: "https://github.com/characterMi/coca-cola_zero"
     },
 ]
 export const htmlSkills = {
