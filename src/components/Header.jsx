@@ -1,5 +1,5 @@
 import { AppBar, Box, Toolbar, Typography } from '@mui/material';
-import Logo from "../../../assets/icons/logo.png";
+import Logo from "../assets/icons/logo.png";
 
 const Header = () => {
   return (

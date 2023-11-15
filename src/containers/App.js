@@ -1,18 +1,15 @@
 import MainLayout from '../Layout/MainLayout';
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import "../App.css";
-import SideBar from '../components/UI/content/sidebar/defaultSidebar/SideBar';
+import SideBar from '../components/sidebar/defaultSidebar/SideBar';
 import MainContent from './ContentContainer';
 import SwipeableViews from "react-swipeable-views";
 import PagesContainer from './PagesContainer';
 import SidebarContainer from './SidebarContainer';
-import { mainContent } from '../components/pagesData';
+import { allPages } from '../constants';
 const App = () => {
   const [drawerActive, setDrawerActive] = useState(false);
-  const [mode, setMode] = useState();
-  useEffect(() => {
-    setMode("first")
-  }, [])
+  const [mode, setMode] = useState('blueTheme');
   const [value, setValue] = useState(0)
   const handleChange = (event, newValue) => {
     setValue(newValue)
@@ -21,15 +18,12 @@ const App = () => {
   const toggleSection = () => {
     setIsActive(!isActive)
   };
-  const handleThemeChange = () => {
-    setMode((prevTheme) => prevTheme === "first" ? "second" : "first")
-  };
   const handleIndexChange = index => {
     setValue(index)
   }
-  const contents = mainContent();
+  const contents = allPages();
   return (
-    <MainLayout  handleThemeChange={handleThemeChange} setDrawerActive={setDrawerActive} mode={mode}>
+    <MainLayout setMode={setMode} setDrawerActive={setDrawerActive} mode={mode}>
       <SidebarContainer isActive={isActive}>
         <SideBar setDrawerActive={setDrawerActive} drawerActive={drawerActive} value={value} handleChange={handleChange} toggleSection={toggleSection} setIsActive={setIsActive} isActive={isActive} />
       </SidebarContainer>

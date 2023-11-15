@@ -1,5 +1,4 @@
 import { SwipeableDrawer, Drawer, Divider, Box, Fab } from "@mui/material";
-import '../../../../../App.css';
 import '../sidebar.css';
 import { FaBars } from "react-icons/fa"; import { BsXCircle } from "react-icons/bs"
 

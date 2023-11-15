@@ -1,5 +1,5 @@
 import { Tabs, Tab } from "@mui/material";
-import { sidebarTabs } from "../../../../tabsData";
+import { sidebarTabs } from "../../../constants";
 
 const SidebarBody = ({value, handleChange, tabProps}) => {
     const data = sidebarTabs();

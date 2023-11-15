@@ -1,6 +1,6 @@
 import { Box, Typography, Divider, IconButton } from "@mui/material";
 import { FaRegCopyright } from "react-icons/fa";
-import { linksData } from "../../../../tabsData"
+import { linksData } from "../../../constants"
 import { RiHeart2Fill } from "react-icons/ri";
 const CustomizedDrawerFooter = () => {
     return (

@@ -1,5 +1,5 @@
 import { Typography, IconButton, Box, Divider, Button } from "@mui/material";
-import { linksData } from "../../../../tabsData";
+import { linksData } from "../../../constants";
 import { FaUser } from "react-icons/fa";
 const SidebarHeader = () => {
     return (

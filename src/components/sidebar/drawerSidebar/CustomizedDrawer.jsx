@@ -1,7 +1,7 @@
 import '../sidebar.css';
 import { Divider, Box, Tabs, Tab } from "@mui/material";
 import { CustomizedDrawerHeader, CustomizedDrawerFooter } from '../sidebarStructure';
-import { drawerTabs } from '../../../../tabsData';
+import { drawerTabs } from '../../../constants';
 
 
 const CustomizedDrawer = ({ value, handleChange, setDrawerActive, tabProps }) => {
