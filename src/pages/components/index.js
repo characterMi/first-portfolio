@@ -17,6 +17,8 @@ import Nike_website from "../../assets/pics/nike-website.png";
 import Gym_lovers from "../../assets/pics/gym-lovers.png";
 import Youtube_clone from "../../assets/pics/atb-media.png";
 import Coca_Cola from "../../assets/pics/coca-cola_zero.png";
+import Nasa_Nexus from "../../assets/pics/nasa-nexus.png";
+import FilmHub from "../../assets/pics/filmhub.png";
 export { default as DeveloperInfo } from "./DeveloperInfo"
 export { default as SkillsComponent } from "./SkillsComponent"
 export { default as ParticlesComponent } from "./ParticlesComponent"
@@ -69,6 +71,18 @@ export const AllPortfolios = [
         title: "Coca-Cola [[Zero]]",
         moreDescription: "یک پروژه باحال که با threeJs و React ساخته شده و خیلی UI خوبی داره (به این یکی حتما یه سر بزنید ! )",
         link: "https://github.com/characterMi/coca-cola_zero"
+    },
+    {
+        photo: Nasa_Nexus,
+        title: "Nexus rocket",
+        moreDescription: "وب سایت موشک Nexus یک وبسایت تعاملی است که با استفاده از تکنولوژی Three.js یک مدل سه بعدی از موشک Nexus را به نمایش میگذارد. این وبسایت همچنین اطلاعات جامعی در مورد این موشک ارایه میدهد.",
+        link: "https://github.com/characterMi/nasa_nexus"
+    },
+    {
+        photo: FilmHub,
+        title: "Film Hub",
+        moreDescription: "وب اپلیکیشن فیلم هاب یک اپلیکیشن جامع برای علاقه مندان به فیلم است. این اپلیکیشن شامل طیف وسیعی از فیلم های مختلف از سراسر دنیا است. کاربران می توانند با استفاده از این اپلیکیشن, فیلم های مورد علاقه خود را پیدا کرده و اطلاعات کاملی درمورد آنها کسب کنند",
+        link: "https://github.com/characterMi/film_hub"
     },
 ]
 export const htmlSkills = {
