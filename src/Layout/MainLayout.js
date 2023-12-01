@@ -78,7 +78,10 @@ const MainLayout = ({ children, mode, setMode, setDrawerActive }) => {
                                         "&:hover": { background: theme.color },
                                         outline: theme.themeName === mode && '1px solid #fff'
                                     }}
-                                    onClick={() => setMode(theme.themeName)}
+                                    onClick={() => {
+                                        setMode(theme.themeName)
+                                        setColorPaletteOpen(false)
+                                    }}
                                 />
                             ))}
                         </Box>

@@ -7,8 +7,9 @@ const TypingAnimation = () => {
     const nameEl = useRef(null)
     const infoEl = useRef(null)
     const strings = [
-        "من یک توسعه دهنده فرانت اند هستم",
-        "من یک دیزاینر هستم"]
+        "من | Front-end developer هستم",
+        "من | 3D developer هستم",
+        "من | React developer هستم",]
     useEffect(() => {
         const typedNamed = new Typed(nameEl.current, {
             strings: ["ابولفضل تقدسی"],
@@ -38,7 +39,7 @@ const TypingAnimation = () => {
                 <Typography ref={nameEl} sx={{ textAlign: "center", p: 1, textShadow: "0 0 10px #000", fontWeight: "bold", fontSize: {xs: "2rem", sm: "3rem"} }} color="info.main" />
                 <Typography sx={{ textShadow: "0 0 10px #000", fontWeight: "bold" }} color="secondary.main" variant="h2">{"}}"}</Typography>
             </Box>
-            <Typography ref={infoEl} sx={{ textAlign: "center", textDecoration: "underline", textDecorationColor: "#000", textShadow: "0 0 10px #000", fontSize: {xs: "1.5rem", sm: "2rem"} }} color="info.main" />
+            <Typography ref={infoEl} sx={{ textAlign: "center", textDecoration: "underline", textDecorationColor: "#000", textShadow: "0 0 10px #000", fontSize: {xs: "1.5rem", sm: "2rem"}, direction: 'ltr' }} color="info.main" />
         </>
     )
 }

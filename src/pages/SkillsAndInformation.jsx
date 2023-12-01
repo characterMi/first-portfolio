@@ -6,7 +6,7 @@ import { DeveloperInfo, SkillsComponent, ParticlesComponent } from "./components
 import { secondLinks } from "../particles/particles";
 import { Helmet } from "react-helmet-async";
 import DividerStyled from "./components/DividerComponent";
-const Resume = () => (
+const SkillsAndInformation = () => (
     <Card sx={{
         height: "100vh",
         backgroundImage: `url(${BG})`,
@@ -19,12 +19,12 @@ const Resume = () => (
     }}>
         <Helmet>
             <title>
-                Abolfazl Taghadosi | Resume
+                Abolfazl Taghadosi | Skills
             </title>
         </Helmet>
         <CardContent sx={{ p: 0, position: "relative" }}>
             <DividerStyled icon={<FaCode color="#fff" style={{ fontSize: "25px", marginRight: "-10px" }} />}>
-                رزومه من
+                مهارت های من
             </DividerStyled>
             <Box component="div" sx={{ backgroundColor: "secondary.main", width: "45%", height: "100%", position: "absolute", top: "8%", right: "3%", borderRadius: "20px", boxShadow: "0 0 10px #0c133b" }}>
                 <Typography color="info.main" sx={{ textAlign: "center", mt: 1, textShadow: "0 0 10px #000", fontSize: { xs: "2rem", sm: "3rem" } }}>مهارت ها</Typography>
@@ -43,4 +43,4 @@ const Resume = () => (
     </Card>
 )
 
-export default Resume;
+export default SkillsAndInformation;

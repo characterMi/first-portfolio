@@ -117,7 +117,7 @@ export const threeSkills = {
 }
 export const nextSkills = {
     icon: nextJs,
-    color: "error",
+    color: "success",
     title: "NextJs"
 }
 export const bootstrapSkills = {

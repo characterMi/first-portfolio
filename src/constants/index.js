@@ -1,4 +1,4 @@
-import { About, HomePage, MyPortfolios, Resume } from '../pages';
+import { About, HomePage, MyPortfolios, SkillsAndInformation } from '../pages';
 import { HiOutlineUser } from 'react-icons/hi'; import { FaLaptopCode, FaCode, FaGithub, FaInstagram, FaTelegram, FaDiscord } from 'react-icons/fa'; import { BsReverseLayoutTextWindowReverse } from 'react-icons/bs';
 import { Box, Typography } from '@mui/material';
 
@@ -10,7 +10,7 @@ export const allPages = () => {
         },
         {
             value:
-                <Resume />
+                <SkillsAndInformation />
         },
         {
             value:
@@ -42,7 +42,7 @@ export const sidebarTabs = () => {
                     <span className='icon'>
                         <BsReverseLayoutTextWindowReverse />
                     </span>
-                    <Typography variant="h4" className="item">رزومه من</Typography>
+                    <Typography variant="h4" className="item">مهارت های من</Typography>
                 </span>
         },
         {
@@ -85,7 +85,7 @@ export const drawerTabs = () => {
                     <Box component="span" className='icon'>
                         <BsReverseLayoutTextWindowReverse />
                     </Box>
-                    <Typography sx={{ fontSize: "2rem" }} className="item">رزومه من</Typography>
+                    <Typography sx={{ fontSize: "2rem" }} className="item">مهارت های من</Typography>
                 </span>
         },
         {
