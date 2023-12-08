@@ -1,13 +1,13 @@
 @font-face {
-    font-family: 'Kalameh';
-    src: url('../fonts/Kalameh-Regular.eot');
-    src: url('../fonts/Kalameh-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Kalameh-Regular.woff2') format('woff2'),
-        url('../fonts/Kalameh-Regular.woff') format('woff'),
-        url('../fonts/Kalameh-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Kalameh";
+  src: url("../fonts/Kalameh-Regular.eot");
+  src: url("../fonts/Kalameh-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Kalameh-Regular.woff2") format("woff2"),
+    url("../fonts/Kalameh-Regular.woff") format("woff"),
+    url("../fonts/Kalameh-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -17,17 +17,17 @@
 
 /* Hide scrollbar for IE, Edge and Firefox */
 * {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #000;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
 }
 
 a {
-    color: gray;
-    font-size: 30px;
+  color: gray;
+  font-size: 30px;
 }
