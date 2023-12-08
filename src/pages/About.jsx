@@ -4,8 +4,8 @@ import { HiOutlineUser } from "react-icons/hi";
 import { RiHeart2Fill } from "react-icons/ri";
 import { Helmet } from "react-helmet-async";
 import { stars } from "../particles/particles";
-import DividerStyled from "./components/DividerComponent";
-import { ParticlesComponent } from "./components";
+import DividerStyled from "../components/DividerComponent";
+import { ParticlesComponent } from "../components";
 
 const About = () => {
   return (
@@ -60,8 +60,9 @@ const About = () => {
           <br />
           اوایل هیچ میلی به برنامه نویسی نداشتم و صرفا بخاطر آسون بودن این رشته
           توی مدرسه انتخابش کردم, اما به مرور بیشتر بهش علاقه مند شدم <br />
-          من همیشه دوست داشتم که چیزهایی رو خلق کنم که هم ازش لذت ببرم و هم دیگران ازش استفاده کنند.
-          فکر کنم برنامه نویسی یکی از بهترین راه ها برای رسیدن به این هدفه
+          من همیشه دوست داشتم که چیزهایی رو خلق کنم که هم ازش لذت ببرم و هم
+          دیگران ازش استفاده کنند. فکر کنم برنامه نویسی یکی از بهترین راه ها
+          برای رسیدن به این هدفه
           <br />
           پارسال اول مهر, هنگام شروع سال تحصیلی, من هیچ ایده ای از برنامه نویسی
           و چگونگیش نداشتم, با گذشت چند هفته معلم ها شروع به درس دادن کردن و من
