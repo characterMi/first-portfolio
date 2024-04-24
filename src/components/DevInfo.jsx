@@ -10,7 +10,7 @@ const DevInfo = ({ children }) => {
           display: "flex",
           alignItems: "center",
           pt: 5,
-          textShadow: "0 0 20px #fff",
+          color: "warning.main",
           fontSize: { xs: "1.2rem", sm: "1.5rem", lg: "2rem", xl: "3rem" },
         }}
       >

@@ -1,6 +1,8 @@
-import { Chip, Divider, Typography } from "@mui/material";
+import { Chip, Divider, Typography, useTheme } from "@mui/material";
 
-const DividerStyled = ({ children, icon }) => {
+const DividerStyled = ({ children, icon, textColor }) => {
+  const { palette: { primary: { main } } } = useTheme()
+
   return (
     <>
       <Divider
@@ -14,13 +16,14 @@ const DividerStyled = ({ children, icon }) => {
         <Chip
           sx={{
             backdropFilter: "blur(20px)",
-            boxShadow: "0 0 10px",
-            padding: "20px 15px",
+            boxShadow: `0 0 0 3px ${main}`,
+            padding: "25px 25px",
+            background: "warning.dark",
           }}
           icon={icon}
           label={
             <Typography
-              color="info.main"
+              color={textColor || main}
               sx={{ fontSize: { xs: "1.5rem", sm: "2.5rem" } }}
             >
               {children}

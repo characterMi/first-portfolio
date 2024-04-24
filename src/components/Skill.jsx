@@ -1,6 +1,6 @@
 import { Box, LinearProgress, Typography } from "@mui/material";
 
-const Skills = ({ icon, color, title, skill }) => {
+const Skill = ({ icon, color, title, skill }) => {
   return (
     <>
       <Box sx={{ pt: 2, pb: 1 }}>
@@ -59,4 +59,4 @@ const Skills = ({ icon, color, title, skill }) => {
   );
 };
 
-export default Skills;
+export default Skill;

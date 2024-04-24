@@ -1,4 +1,4 @@
-import { Tabs, Tab } from "@mui/material";
+import { Tab, Tabs } from "@mui/material";
 import { sidebarTabs } from "../../../constants";
 
 const SidebarBody = ({ value, handleChange, tabProps }) => {
@@ -24,7 +24,7 @@ const SidebarBody = ({ value, handleChange, tabProps }) => {
               backgroundColor: "primary.main",
             },
             "& .a:hover .item, & .a:hover .icon": {
-              color: "secondary.main",
+              color: "info.main",
             },
           }}
           key={index}

@@ -1,6 +1,6 @@
-import { Typography, Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
-import { useRef, useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 
 const TypingAnimation = () => {
@@ -73,7 +73,7 @@ const TypingAnimation = () => {
           fontSize: { xs: "1.5rem", sm: "2rem" },
           direction: "ltr",
         }}
-        color="info.main"
+        color="warning.main"
       />
     </>
   );

@@ -1,22 +1,19 @@
-import { Box, Typography } from "@mui/material";
-import BG from "../assets/bg06.jpg";
+import { Box, Typography, useTheme } from "@mui/material";
+import { Helmet } from "react-helmet-async";
 import { HiOutlineUser } from "react-icons/hi";
 import { RiHeart2Fill } from "react-icons/ri";
-import { Helmet } from "react-helmet-async";
-import { stars } from "../particles/particles";
-import DividerStyled from "../components/DividerComponent";
 import { ParticlesComponent } from "../components";
+import DividerStyled from "../components/DividerComponent";
+import { stars } from "../particles/particles";
 
 const About = () => {
+  const { palette: { warning: { main } } } = useTheme()
+
   return (
     <Box
       sx={{
         height: "100vh",
-        backgroundImage: `url(${BG})`,
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
+        backgroundColor: "primary.light",
         overflowY: "auto",
       }}
     >
@@ -26,10 +23,11 @@ const About = () => {
       <DividerStyled
         icon={
           <HiOutlineUser
-            color="#fff"
+            color={main}
             style={{ fontSize: "25px", marginRight: "-10px" }}
           />
         }
+        textColor={main}
       >
         درباره من
       </DividerStyled>
@@ -39,9 +37,9 @@ const About = () => {
           mx: 3,
           my: 5,
           p: 3,
-          background: "transparent",
+          backgroundColor: "primary.main",
           backdropFilter: "blur(5px)",
-          boxShadow: "0 0 10px #000",
+          boxShadow: `0 0 0 2px ${main}`,
           borderRadius: "15px",
         }}
       >

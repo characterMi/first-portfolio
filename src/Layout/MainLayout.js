@@ -1,26 +1,21 @@
-import {
-  blueTheme,
-  brownTheme,
-  goldTheme,
-  tealTheme,
-  orangeTheme,
-  yellowTheme,
-  redTheme,
-  secondBlueTheme,
-} from "./theme/MainTheme";
-import { CacheProvider } from "@emotion/react";
-import { HelmetProvider } from "react-helmet-async";
 import createCache from "@emotion/cache";
-import { prefixer } from "stylis";
+import { CacheProvider } from "@emotion/react";
+import { Box, Fab, ThemeProvider, Tooltip } from "@mui/material";
+import Grid from "@mui/material/Unstable_Grid2";
+import { useState } from "react";
+import { HelmetProvider } from "react-helmet-async";
 import { FaBars } from "react-icons/fa";
 import { TbExchange } from "react-icons/tb";
-import { Fab, Box, Tooltip } from "@mui/material";
+import { prefixer } from "stylis";
 import rtlPlugin from "stylis-plugin-rtl";
-import { ThemeProvider } from "@mui/material";
 import Header from "../components/Header";
-import Grid from "@mui/material/Unstable_Grid2";
 import { allThemes } from "../constants";
-import { useState } from "react";
+import {
+  blueTheme,
+  goldTheme,
+  orangeTheme,
+  tealTheme,
+} from "./theme/MainTheme";
 const cacheRTL = createCache({
   key: "muirtl",
   stylisPlugins: [prefixer, rtlPlugin],
@@ -28,6 +23,7 @@ const cacheRTL = createCache({
 
 const MainLayout = ({ children, mode, setMode, setDrawerActive }) => {
   let theme;
+
   switch (mode) {
     case "blueTheme":
       theme = blueTheme;
@@ -38,24 +34,13 @@ const MainLayout = ({ children, mode, setMode, setDrawerActive }) => {
     case "tealTheme":
       theme = tealTheme;
       break;
-    case "brownTheme":
-      theme = brownTheme;
-      break;
-    case "redTheme":
-      theme = redTheme;
-      break;
-    case "yellowTheme":
-      theme = yellowTheme;
-      break;
     case "goldTheme":
       theme = goldTheme;
-      break;
-    case "secondBlueTheme":
-      theme = secondBlueTheme;
       break;
     default:
       theme = blueTheme;
   }
+
   const [colorPaletteOpen, setColorPaletteOpen] = useState(false);
 
   return (
@@ -122,7 +107,10 @@ const MainLayout = ({ children, mode, setMode, setDrawerActive }) => {
                     outline: theme.themeName === mode && "1px solid #fff",
                   }}
                   onClick={() => {
-                    setMode(theme.themeName);
+                    localStorage.setItem("theme", theme.themeName);
+
+                    setMode(localStorage.getItem("theme"));
+
                     setColorPaletteOpen(false);
                   }}
                 />

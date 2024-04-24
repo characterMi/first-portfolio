@@ -1,12 +1,8 @@
-import { Typography, IconButton, Box, Divider, Button } from "@mui/material";
+import { Box, Button, Divider, IconButton, Typography } from "@mui/material";
 import { linksData } from "../../../constants";
-import { FaUser } from "react-icons/fa";
 const SidebarHeader = () => {
   return (
     <Box component="div" className="profile">
-      <Box>
-        <FaUser className="pro-img" />
-      </Box>
       <Box component="div" className="pro-info">
         <Typography
           variant="h4"

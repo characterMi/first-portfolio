@@ -1,15 +1,8 @@
-import { Typography, Box } from "@mui/material";
-import { FaUser } from "react-icons/fa";
+import { Box, Typography } from "@mui/material";
 
 const CustomizedDrawerHeader = () => {
   return (
     <Box component="div" className="profile">
-      <Box>
-        <FaUser
-          sx={{ display: { xs: "none", sm: "block" }, cursor: "pointer" }}
-          className="pro-img"
-        />
-      </Box>
       <Box component="div" className="pro-info">
         <Typography
           sx={{ textDecoration: "underline", textDecorationColor: "gray" }}

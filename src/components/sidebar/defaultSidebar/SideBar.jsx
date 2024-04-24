@@ -1,13 +1,13 @@
-import { SwipeableDrawer, Drawer, Divider, Box, Fab } from "@mui/material";
-import "../sidebar.css";
-import { FaBars } from "react-icons/fa";
+import { Box, Divider, Fab, SwipeableDrawer } from "@mui/material";
 import { BsXCircle } from "react-icons/bs";
+import { FaBars } from "react-icons/fa";
+import "../sidebar.css";
 
 import {
+  CustomizedDrawer,
+  SidebarBody,
   SidebarFooter,
   SidebarHeader,
-  SidebarBody,
-  CustomizedDrawer,
 } from "../sidebarStructure";
 const SideBar = ({
   setDrawerActive,
@@ -41,7 +41,7 @@ const SideBar = ({
           </Fab>
           <Box
             className="sidebar"
-            sx={{ backgroundColor: "info.main" }}
+            sx={{ backgroundColor: "warning.main" }}
             component="div"
           >
             {/* Sidebar Header */}
@@ -59,57 +59,22 @@ const SideBar = ({
           </Box>
         </Box>
       </Box>
-      {window.innerWidth < 760 ? (
-        <SwipeableDrawer
-          open={drawerActive}
-          variant="temporary"
-          onClose={() => setDrawerActive(false)}
-          sx={{
-            "& .MuiDrawer-paper": { width: { xs: "60%", sm: "50%" } },
-            display: { xs: "block", md: "none" },
-          }}
-        >
-          <Fab
-            aria-label="Sidebar"
-            sx={{ position: "fixed", top: ".5%", left: "0" }}
-            color="warning"
-            onClick={() => setDrawerActive(false)}
-          >
-            <BsXCircle />
-          </Fab>
-          <CustomizedDrawer
-            tabProps={tabProps}
-            setDrawerActive={setDrawerActive}
-            value={value}
-            handleChange={handleChange}
-          />
-        </SwipeableDrawer>
-      ) : (
-        <Drawer
-          open={drawerActive}
-          variant="temporary"
-          onClose={() => setDrawerActive(false)}
-          sx={{
-            "& .MuiDrawer-paper": { width: { xs: "60%", sm: "50%" } },
-            display: { xs: "block", md: "none" },
-          }}
-        >
-          <Fab
-            aria-label="Sidebar"
-            sx={{ position: "fixed", top: ".5%", left: "0" }}
-            color="warning"
-            onClick={() => setDrawerActive(false)}
-          >
-            <BsXCircle />
-          </Fab>
-          <CustomizedDrawer
-            tabProps={tabProps}
-            setDrawerActive={setDrawerActive}
-            value={value}
-            handleChange={handleChange}
-          />
-        </Drawer>
-      )}
+      <SwipeableDrawer
+        open={drawerActive}
+        variant="temporary"
+        onClose={() => setDrawerActive(false)}
+        sx={{
+          "& .MuiDrawer-paper": { width: { xs: "60%", sm: "50%" } },
+          display: { xs: "block", md: "none" },
+        }}
+      >
+        <CustomizedDrawer
+          tabProps={tabProps}
+          setDrawerActive={setDrawerActive}
+          value={value}
+          handleChange={handleChange}
+        />
+      </SwipeableDrawer>
     </>
   );
 };

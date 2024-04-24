@@ -1,27 +1,43 @@
-import MainLayout from "../Layout/MainLayout";
-import { useState } from "react";
-import "../App.css";
-import SideBar from "../components/sidebar/defaultSidebar/SideBar";
-import MainContent from "./ContentContainer";
+import { useEffect, useState } from "react";
 import SwipeableViews from "react-swipeable-views";
+import "../App.css";
+import MainLayout from "../Layout/MainLayout";
+import SideBar from "../components/sidebar/defaultSidebar/SideBar";
+import { allPages } from "../constants";
+import MainContent from "./ContentContainer";
 import PagesContainer from "./PagesContainer";
 import SidebarContainer from "./SidebarContainer";
-import { allPages } from "../constants";
 const App = () => {
   const [drawerActive, setDrawerActive] = useState(false);
+
   const [mode, setMode] = useState("blueTheme");
+
   const [value, setValue] = useState(0);
-  const handleChange = (event, newValue) => {
+
+  const [isActive, setIsActive] = useState(true);
+
+  const handleChange = (_, newValue) => {
     setValue(newValue);
   };
-  const [isActive, setIsActive] = useState(true);
+
   const toggleSection = () => {
     setIsActive(!isActive);
   };
+
   const handleIndexChange = (index) => {
     setValue(index);
   };
+
+  useEffect(() => {
+    if (!localStorage.getItem("theme")) {
+      localStorage.setItem("theme", "blueTheme");
+    }
+
+    setMode(localStorage.getItem("theme"));
+  }, []);
+
   const contents = allPages();
+
   return (
     <MainLayout setMode={setMode} setDrawerActive={setDrawerActive} mode={mode}>
       <SidebarContainer isActive={isActive}>

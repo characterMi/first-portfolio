@@ -1,25 +1,28 @@
-import BG from "../assets/bg09.webp";
-import { useState, useEffect } from "react";
-import { Helmet } from "react-helmet-async";
 import {
   Button,
   Card,
-  CardContent,
-  Typography,
   CardActionArea,
-  CardMedia,
   CardActions,
+  CardContent,
+  CardMedia,
   Slide,
   Tooltip,
+  Typography,
+  useTheme,
 } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
-import { FaLaptopCode } from "react-icons/fa";
+import { useEffect, useState } from "react";
 import EllipsisText from "react-ellipsis-text/lib/components/EllipsisText";
+import { Helmet } from "react-helmet-async";
+import { FaLaptopCode } from "react-icons/fa";
 import { AllPortfolios } from "../components";
 import DividerStyled from "../components/DividerComponent";
 
 const MyPortfolios = () => {
+  const { palette: { warning: { main } } } = useTheme()
+
   const [loading, setLoading] = useState(false);
+
   useEffect(() => {
     setLoading(true);
     return () => {
@@ -31,26 +34,23 @@ const MyPortfolios = () => {
     <Card
       sx={{
         height: "100vh",
-        backgroundImage: `url(${BG})`,
-        backgroundPosition: "top",
-        backgroundAttachment: "fixed",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
+        backgroundColor: "primary.light",
         overflowY: "auto",
         borderRadius: "0",
       }}
     >
       <Helmet>
-        <title>Abolfazl Taghadosi | Portfolios</title>
+        <title>Abolfazl Taghadosi | Projects</title>
       </Helmet>
       <CardContent sx={{ p: 0, position: "relative" }}>
         <DividerStyled
           icon={
             <FaLaptopCode
-              color="#fff"
+              color={main}
               style={{ fontSize: "25px", marginRight: "-10px" }}
             />
           }
+          textColor={main}
         >
           نمونه کارهای من
         </DividerStyled>

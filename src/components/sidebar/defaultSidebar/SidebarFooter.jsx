@@ -21,7 +21,12 @@ const SidebarFooter = () => {
           />
         </Typography>
         <Typography variant="h6" sx={{ display: "flex", alignItems: "center" }}>
-          کپی رایت 1402 <FaRegCopyright />
+          کپی رایت{" "}
+          {new Date().toLocaleDateString("fa-IR-u-nu-latn").split("/")[0]}{" "}
+          <FaRegCopyright
+            fontSize="16px"
+            style={{ marginRight: "5px", marginTop: "-5px" }}
+          />
         </Typography>
       </Box>
     </>

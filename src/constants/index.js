@@ -1,15 +1,15 @@
-import { About, HomePage, MyPortfolios, SkillsAndInformation } from "../pages";
-import { HiOutlineUser } from "react-icons/hi";
+import { Box, Typography } from "@mui/material";
+import { BsReverseLayoutTextWindowReverse } from "react-icons/bs";
 import {
-  FaLaptopCode,
   FaCode,
   FaGithub,
   FaInstagram,
+  FaLaptopCode,
+  FaLinkedin,
   FaTelegram,
-  FaDiscord,
 } from "react-icons/fa";
-import { BsReverseLayoutTextWindowReverse } from "react-icons/bs";
-import { Box, Typography } from "@mui/material";
+import { HiOutlineUser } from "react-icons/hi";
+import { About, HomePage, MyPortfolios, SkillsAndInformation } from "../pages";
 
 export const allPages = () => {
   const pageContent = [
@@ -139,10 +139,10 @@ export const drawerTabs = () => {
 
 export const linksData = [
   {
-    href: "https://discord.gg/yBBwsemQ",
-    icon: <FaDiscord />,
-    name: "Discord",
-    color: "#8293ed",
+    href: "https://linkedin.com/in/abolfazl-taghadosi",
+    icon: <FaLinkedin />,
+    name: "Linkedin",
+    color: "#0288d1",
   },
   {
     href: "https://instagram.com/character_mi",
@@ -166,10 +166,6 @@ export const linksData = [
 
 export const allThemes = [
   {
-    color: "#32d3e7",
-    themeName: "blueTheme",
-  },
-  {
     color: "#f26f14",
     themeName: "orangeTheme",
   },
@@ -178,24 +174,12 @@ export const allThemes = [
     themeName: "tealTheme",
   },
   {
-    color: "#865439",
-    themeName: "brownTheme",
-  },
-  {
-    color: "#be3144",
-    themeName: "redTheme",
-  },
-  {
     color: "#ffc436",
-    themeName: "yellowTheme",
-  },
-  {
-    color: "#dac0a3",
     themeName: "goldTheme",
   },
   {
     color: "#00fff5",
-    themeName: "secondBlueTheme",
+    themeName: "blueTheme",
   },
 ];
 
@@ -257,19 +241,11 @@ export const themeHelper = (palette) => {
           },
         },
       },
-      MuiDrawer: {
-        styleOverrides: {
-          paper: {
-            width: "50%",
-            backgroundColor: palette[2],
-          },
-        },
-      },
       MuiSwipeableDrawer: {
         styleOverrides: {
           paper: {
             width: "50%",
-            backgroundColor: palette[2],
+            backgroundColor: palette[3],
           },
         },
       },
