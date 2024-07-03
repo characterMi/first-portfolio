@@ -4,13 +4,7 @@ const Skill = ({ icon, color, title, skill }) => {
   return (
     <>
       <Box sx={{ pt: 2, pb: 1 }}>
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "row-reverse",
-            alignItems: "center",
-          }}
-        >
+        <Box className="skill-header">
           <Box component="img" src={icon} sx={{ height: { xs: 30, lg: 40 } }} />
           <Typography
             color="#fff"
@@ -23,12 +17,9 @@ const Skill = ({ icon, color, title, skill }) => {
           </Typography>
         </Box>
         <Box
+          className="skill-body"
           sx={{
             pt: 2,
-            position: "relative",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
           }}
         >
           <LinearProgress
@@ -38,6 +29,8 @@ const Skill = ({ icon, color, title, skill }) => {
             sx={{
               height: { xs: 10, sm: 15, lg: 20, xl: 25 },
               borderRadius: 2,
+              MozBorderRadius: 2,
+              WebkitBorderRadius: 2,
               width: { xs: "80%", sm: "85%", lg: "90%" },
               position: "absolute",
               right: "0",

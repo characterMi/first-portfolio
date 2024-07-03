@@ -3,9 +3,9 @@ import { useEffect, useState } from "react";
 import {
   bootstrapSkills,
   cssSkills,
-  dockerSkills,
   gitSkills,
   htmlSkills,
+  jestSkills,
   jsSkills,
   nextSkills,
   reactSkills,
@@ -23,13 +23,13 @@ const SkillsContainer = () => {
     js: 0,
     ts: 0,
     react: 0,
+    jest: 0,
     three: 0,
     next: 0,
     bootstrap: 0,
     sass: 0,
     tailwind: 0,
     git: 0,
-    docker: 0,
   });
 
   useEffect(() => {
@@ -43,10 +43,10 @@ const SkillsContainer = () => {
         bootstrap: Math.min(prev.bootstrap + 5, 80),
         tailwind: Math.min(prev.tailwind + 5, 90),
         react: Math.min(prev.react + 5, 85),
+        jest: Math.min(prev.jest + 5, 70),
         three: Math.min(prev.three + 5, 50),
         next: Math.min(prev.next + 5, 85),
         git: Math.min(prev.git + 5, 70),
-        docker: Math.min(prev.docker + 5, 70),
       }))
     }, 10);
 
@@ -105,6 +105,12 @@ const SkillsContainer = () => {
       skill: technologies.react,
     },
     {
+      icon: jestSkills.icon,
+      color: jestSkills.color,
+      title: jestSkills.title,
+      skill: technologies.jest,
+    },
+    {
       icon: threeSkills.icon,
       color: threeSkills.color,
       title: threeSkills.title,
@@ -121,12 +127,6 @@ const SkillsContainer = () => {
       color: gitSkills.color,
       title: gitSkills.title,
       skill: technologies.git,
-    },
-    {
-      icon: dockerSkills.icon,
-      color: dockerSkills.color,
-      title: dockerSkills.title,
-      skill: technologies.docker,
     },
   ];
 

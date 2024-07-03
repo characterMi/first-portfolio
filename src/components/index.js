@@ -2,10 +2,10 @@ import cssIcon from "../assets/icons/css3-original.svg";
 import gitIcon from "../assets/icons/git-original.svg";
 import htmlIcon from "../assets/icons/html5-original.svg";
 import bootstrap from "../assets/icons/icons8-bootstrap.svg";
-import dockerIcon from "../assets/icons/icons8-docker.svg";
 import sass from "../assets/icons/icons8-sass.svg";
 import tsIcon from "../assets/icons/icons8-typescript-240.svg";
 import jsIcon from "../assets/icons/javascript-original.svg";
+import jest from "../assets/icons/jest.svg";
 import nextJs from "../assets/icons/nextjs-original.svg";
 import reactIcon from "../assets/icons/react-original.svg";
 import tailwind from "../assets/icons/tailwind.svg";
@@ -13,6 +13,7 @@ import Three from "../assets/icons/threeJs-icon.png";
 import Admin_panel from "../assets/pics/admin-panel.png";
 import AnimeVault from "../assets/pics/anime_vault.png";
 import Youtube_clone from "../assets/pics/atb-media.png";
+import CarGame from "../assets/pics/car-game.png";
 import Coca_Cola from "../assets/pics/coca-cola_zero.png";
 import Customizable_shirt from "../assets/pics/customizable-shirt.png";
 import DesignWave from "../assets/pics/designwave.png";
@@ -68,6 +69,13 @@ export const AllPortfolios = [
     moreDescription:
       "بازی Marble Race یک بازی تحت وب ساخته شده با استفاده از Three.js است که در سبک بازی‌های ماجراجویی و چالشی قرار می‌گیرد.",
     link: "https://github.com/characterMi/marble-race",
+  },
+  {
+    photo: CarGame,
+    title: "Car Game",
+    moreDescription:
+      "یک بازی ماشینی ساخته شده با استفاده از Three.js. کاملا واکنش گرا در تمامی دستگاه ها.",
+    link: "https://github.com/characterMi/car-game",
   },
   {
     photo: Gym_lovers,
@@ -212,8 +220,8 @@ export const gitSkills = {
   color: "success",
   title: "Git",
 };
-export const dockerSkills = {
-  icon: dockerIcon,
+export const jestSkills = {
+  icon: jest,
   color: "success",
-  title: "Docker",
+  title: "Jest",
 };

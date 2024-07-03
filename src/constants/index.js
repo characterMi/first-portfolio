@@ -146,19 +146,19 @@ export const linksData = [
   },
   {
     href: "https://instagram.com/character_mi",
-    icon: <FaInstagram sx={{ color: "gray" }} />,
+    icon: <FaInstagram />,
     name: "Instagram",
     color: "#cc296c",
   },
   {
     href: "https://github.com/characterMi",
-    icon: <FaGithub sx={{ color: "gray" }} />,
+    icon: <FaGithub />,
     name: "Github",
     color: "#2c3456",
   },
   {
     href: "https://t.me/character_mi",
-    icon: <FaTelegram sx={{ color: "gray" }} />,
+    icon: <FaTelegram />,
     name: "Telegram",
     color: "#2481cc",
   },
@@ -245,7 +245,7 @@ export const themeHelper = (palette) => {
         styleOverrides: {
           paper: {
             width: "50%",
-            backgroundColor: palette[3],
+            backgroundColor: palette[2],
           },
         },
       },

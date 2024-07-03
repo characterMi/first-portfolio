@@ -5,7 +5,12 @@ const CustomizedDrawerHeader = () => {
     <Box component="div" className="profile">
       <Box component="div" className="pro-info">
         <Typography
-          sx={{ textDecoration: "underline", textDecorationColor: "gray" }}
+          sx={{
+            textDecoration: "underline",
+            textDecorationColor: "gray",
+            MozTextDecorationColor: "gray",
+            WebkitTextDecorationColor: "gray",
+          }}
           variant="h5"
         >
           ابولفضل تقدسی

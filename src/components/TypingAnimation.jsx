@@ -36,7 +36,7 @@ const TypingAnimation = () => {
   }, []);
   return (
     <>
-      <Box sx={{ display: "flex", justifyContent: "center" }} component="div">
+      <Box className="typing-animation__container" component="div">
         <Typography
           sx={{ textShadow: "0 0 10px #000", fontWeight: "bold" }}
           color="secondary.main"
@@ -69,6 +69,8 @@ const TypingAnimation = () => {
           textAlign: "center",
           textDecoration: "underline",
           textDecorationColor: "#000",
+          MozTextDecorationColor: "#000",
+          WebkitTextDecorationColor: "#000",
           textShadow: "0 0 10px #000",
           fontSize: { xs: "1.5rem", sm: "2rem" },
           direction: "ltr",

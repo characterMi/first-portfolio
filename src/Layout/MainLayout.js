@@ -83,17 +83,14 @@ const MainLayout = ({ children, mode, setMode, setDrawerActive }) => {
             </Tooltip>
             <Box
               sx={{
-                display: colorPaletteOpen ? "flex" : "none",
                 position: "absolute",
                 width: "150px",
                 zIndex: 100,
                 backgroundColor: "secondary.light",
                 p: 1,
-                borderRadius: "0 0 15px 15px",
                 left: "1.5rem",
-                justifyContent: "space-evenly",
-                flexWrap: "wrap",
               }}
+              className={colorPaletteOpen ? "themes-visible" : "hidden"}
             >
               {allThemes.map((theme, index) => (
                 <Fab

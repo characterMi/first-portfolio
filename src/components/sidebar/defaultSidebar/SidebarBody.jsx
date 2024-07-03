@@ -21,6 +21,9 @@ const SidebarBody = ({ value, handleChange, tabProps }) => {
             },
             "& .a:hover": {
               transition: "0.5s ease",
+              msTransition: "0.5s ease",
+              MozTransition: "0.5s ease",
+              WebkitTransition: "0.5s ease",
               backgroundColor: "primary.main",
             },
             "& .a:hover .item, & .a:hover .icon": {

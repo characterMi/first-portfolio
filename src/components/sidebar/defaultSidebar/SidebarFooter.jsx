@@ -1,4 +1,4 @@
-import { Typography, Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { FaRegCopyright } from "react-icons/fa";
 import { RiHeart2Fill } from "react-icons/ri";
 const SidebarFooter = () => {
@@ -7,12 +7,8 @@ const SidebarFooter = () => {
       <Box
         sx={{
           height: 100,
-          flexGrow: 1,
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "end",
-          alignItems: "center",
         }}
+        className="sidebar-footer"
       >
         <Typography variant="h5">
           طراحی شده با{" "}
@@ -20,7 +16,7 @@ const SidebarFooter = () => {
             style={{ color: "red", fontSize: "1rem", marginBottom: "-2px" }}
           />
         </Typography>
-        <Typography variant="h6" sx={{ display: "flex", alignItems: "center" }}>
+        <Typography variant="h6" className="dev-info">
           کپی رایت{" "}
           {new Date().toLocaleDateString("fa-IR-u-nu-latn").split("/")[0]}{" "}
           <FaRegCopyright

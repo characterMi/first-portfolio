@@ -16,6 +16,8 @@ const HomePage = () => {
         backgroundImage: `url(${BG})`,
         backgroundPosition: "left",
         backgroundSize: "cover",
+        MozBackgroundSize: "cover",
+        WebkitBackgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "fixed",
         overflowY: "auto",
@@ -44,12 +46,21 @@ const HomePage = () => {
           padding: "50px 15px 50px",
           height: { xs: "150px", sm: "200px" },
           backdropFilter: "blur(5px)",
+          WebkitBackdropFilter: "blur(5px)",
           borderRadius: "20px",
+          MozBorderRadius: "20px",
+          WebkitBorderRadius: "20px",
           boxShadow: "0 0 10px #000",
+          MozBoxShadow: "0 0 10px #000",
+          WebkitBoxShadow: "0 0 10px #000",
           position: 'absolute',
           top: '50%',
           left: '50%',
-          transform: 'translate(-50%, -50%)'
+          transform: 'translate(-50%, -50%)',
+          msTransform: 'translate(-50%, -50%)',
+          WebkitTransform: 'translate(-50%, -50%)',
+          MozTransform: 'translate(-50%, -50%)',
+          OTransform: 'translate(-50%, -50%)',
         }}
       >
         <TypingAnimation />

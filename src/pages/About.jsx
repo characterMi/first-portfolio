@@ -39,15 +39,20 @@ const About = () => {
           p: 3,
           backgroundColor: "primary.main",
           backdropFilter: "blur(5px)",
+          WebkitBackdropFilter: "blur(5px)",
           boxShadow: `0 0 0 2px ${main}`,
+          MozBoxShadow: `0 0 0 2px ${main}`,
+          WebkitBoxShadow: `0 0 0 2px ${main}`,
           borderRadius: "15px",
+          MozBorderRadius: "15px",
+          WebkitBorderRadius: "15px",
         }}
       >
         <ParticlesComponent value={stars} />
         <Typography
           color="info.main"
           sx={{
-            textAlign: "left",
+            textAlign: "justify",
             direction: "ltr",
             fontSize: { xs: "1.5rem", sm: "2rem" },
           }}
@@ -57,10 +62,10 @@ const About = () => {
           منابع خارجی یاد گرفتم و یه مقداریش هم از دوره های آموزشی و مدرسه .{" "}
           <br />
           اوایل هیچ میلی به برنامه نویسی نداشتم و صرفا بخاطر آسون بودن این رشته
-          توی مدرسه انتخابش کردم, اما به مرور بیشتر بهش علاقه مند شدم <br />
+          توی مدرسه انتخابش کردم, اما به مرور بیشتر بهش علاقه مند شدم. <br />
           من همیشه دوست داشتم که چیزهایی رو خلق کنم که هم ازش لذت ببرم و هم
           دیگران ازش استفاده کنند. فکر کنم برنامه نویسی یکی از بهترین راه ها
-          برای رسیدن به این هدفه
+          برای رسیدن به این هدفه.
           <br />
           پارسال اول مهر, هنگام شروع سال تحصیلی, من هیچ ایده ای از برنامه نویسی
           و چگونگیش نداشتم, با گذشت چند هفته معلم ها شروع به درس دادن کردن و من

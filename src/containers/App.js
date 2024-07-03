@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import SwipeableViews from "react-swipeable-views";
-import "../App.css";
 import MainLayout from "../Layout/MainLayout";
 import SideBar from "../components/sidebar/defaultSidebar/SideBar";
 import { allPages } from "../constants";

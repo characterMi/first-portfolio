@@ -42,6 +42,9 @@ const CustomizedDrawer = ({
                 },
                 "& .a:hover": {
                   transition: "0.2s ease",
+                  msTransition: "0.2s ease",
+                  MozTransition: "0.2s ease",
+                  WebkitTransition: "0.2s ease",
                   backgroundColor: "primary.main",
                 },
                 "& .a:hover .item, & .a:hover .icon": {

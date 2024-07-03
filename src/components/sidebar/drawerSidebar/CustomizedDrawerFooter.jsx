@@ -1,17 +1,11 @@
-import { Box, Typography, Divider, IconButton } from "@mui/material";
+import { Box, Divider, IconButton, Typography } from "@mui/material";
 import { FaRegCopyright } from "react-icons/fa";
-import { linksData } from "../../../constants";
 import { RiHeart2Fill } from "react-icons/ri";
+import { linksData } from "../../../constants";
 const CustomizedDrawerFooter = () => {
   return (
     <>
-      <Box
-        sx={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-evenly",
-        }}
-      >
+      <Box className="mobile-sidebar__footer-socials">
         {linksData.map((link, index) => (
           <IconButton
             sx={{
@@ -39,17 +33,7 @@ const CustomizedDrawerFooter = () => {
         ))}
       </Box>
       <Divider className="divider" variant="middle" />
-      <Box
-        sx={{
-          height: "max-content",
-          width: "max-content",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-          mx: "auto",
-        }}
-      >
+      <Box className="mobile-sidebar__footer">
         <Typography sx={{ fontSize: { xs: "1rem", sm: "1.5rem" } }}>
           طراحی شده با{" "}
           <RiHeart2Fill
@@ -58,7 +42,7 @@ const CustomizedDrawerFooter = () => {
         </Typography>
         <Typography
           variant="subtitle1"
-          sx={{ display: "flex", alignItems: "center" }}
+          className="dev-info"
         >
           کپی رایت{" "}
           {new Date().toLocaleDateString("fa-IR-u-nu-latn").split("/")[0]}{" "}

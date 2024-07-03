@@ -7,7 +7,7 @@ const SidebarContainer = ({ children, isActive }) => {
       xs={0}
       md={isActive ? 3 : 4}
       lg={isActive ? 2 : 3}
-      sx={{ backgroundColor: "info.main", height: "100vh", overflowY: "auto" }}
+      sx={{ backgroundColor: "warning.main", height: "100vh", overflowY: "auto" }}
     >
       {children}
     </Grid>

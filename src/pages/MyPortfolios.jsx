@@ -37,6 +37,8 @@ const MyPortfolios = () => {
         backgroundColor: "primary.light",
         overflowY: "auto",
         borderRadius: "0",
+        MozBorderRadius: "0",
+        WebkitBorderRadius: "0",
       }}
     >
       <Helmet>
@@ -63,6 +65,10 @@ const MyPortfolios = () => {
                 in={loading}
                 style={{
                   transitionDelay: loading ? `${index + 3}50ms` : "0ms",
+                  msTransitionDelay: loading ? `${index + 3}50ms` : "0ms",
+                  MozTransitionDelay: loading ? `${index + 3}50ms` : "0ms",
+                  WebkitTransitionDelay: loading ? `${index + 3}50ms` : "0ms",
+                  OTransitionDelay: loading ? `${index + 3}50ms` : "0ms",
                 }}
               >
                 <Card
@@ -70,6 +76,8 @@ const MyPortfolios = () => {
                     maxWidth: "100%",
                     backgroundColor: "info.main",
                     boxShadow: "0 0 10px #000",
+                    MozBoxShadow: "0 0 10px #000",
+                    WebkitBoxShadow: "0 0 10px #000",
                     direction: "rtl",
                   }}
                 >

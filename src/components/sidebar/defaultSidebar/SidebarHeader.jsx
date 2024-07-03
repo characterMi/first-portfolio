@@ -6,7 +6,12 @@ const SidebarHeader = () => {
       <Box component="div" className="pro-info">
         <Typography
           variant="h4"
-          sx={{ textDecoration: "underline", textDecorationColor: "gray" }}
+          sx={{
+            textDecoration: "underline",
+            textDecorationColor: "gray",
+            MozTextDecorationColor: "gray",
+            WebkitTextDecorationColor: "gray",
+          }}
         >
           ابولفضل تقدسی
         </Typography>
@@ -19,7 +24,7 @@ const SidebarHeader = () => {
         </Button>
       </Box>
       <Divider className="divider" variant="middle" />
-      <Box sx={{ display: "flex" }}>
+      <Box className="flex">
         {linksData.map((link, index) => (
           <IconButton key={index} aria-label={link.name}>
             <a

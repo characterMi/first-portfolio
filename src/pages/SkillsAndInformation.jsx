@@ -19,6 +19,8 @@ const SkillsAndInformation = () => {
         backgroundColor: "primary.light",
         overflowY: "auto",
         borderRadius: "0",
+        MozBorderRadius: "0",
+        WebkitBorderRadius: "0",
       }}
     >
       <Helmet>
@@ -46,6 +48,8 @@ const SkillsAndInformation = () => {
             top: "8%",
             right: "3%",
             borderRadius: "20px",
+            MozBorderRadius: "20px",
+            WebkitBorderRadius: "20px",
           }}
         >
           <Typography
@@ -70,6 +74,8 @@ const SkillsAndInformation = () => {
             top: "8%",
             left: "3%",
             borderRadius: "20px",
+            MozBorderRadius: "20px",
+            WebkitBorderRadius: "20px",
           }}
         >
           <Typography
@@ -89,7 +95,10 @@ const SkillsAndInformation = () => {
           sx={{
             background: "transparent",
             backdropFilter: "blur(5px)",
+            WebkitBackdropFilter: "blur(5px)",
             boxShadow: "0 0 10px #000",
+            MozBoxShadow: "0 0 10px #000",
+            WebkitBoxShadow: "0 0 10px #000",
             marginTop: { xs: "120px", sm: "180px" },
             padding: "0 15px",
             direction: "ltr",

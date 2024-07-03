@@ -16,7 +16,10 @@ const DividerStyled = ({ children, icon, textColor }) => {
         <Chip
           sx={{
             backdropFilter: "blur(20px)",
+            WebkitBackdropFilter: "blur(20px)",
             boxShadow: `0 0 0 3px ${main}`,
+            MozBoxShadow: `0 0 0 3px ${main}`,
+            WebkitBoxShadow: `0 0 0 3px ${main}`,
             padding: "25px 25px",
             background: "warning.dark",
           }}
