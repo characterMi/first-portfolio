@@ -16,11 +16,11 @@ const SidebarHeader = () => {
           ابولفضل تقدسی
         </Typography>
         <Button
-          href="mailto:abolfazl2007fx@gmail.com"
+          href="mailto:workabolfazltaghadosi@gmail.com"
           size="large"
           variant="h5"
         >
-          abolfazl2007fx@gmail.com
+          workabolfazltaghadosi@gmail.com
         </Button>
       </Box>
       <Divider className="divider" variant="middle" />

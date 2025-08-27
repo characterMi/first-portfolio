@@ -13,7 +13,7 @@ const DeveloperInfo = () => {
       info: "استان محل سکونت : خراسان رضوی",
     },
     {
-      info: "آدرس ایمیل : abolfazl2007@gmail.com",
+      info: "آدرس ایمیل : workabolfazltaghadosi@gmail.com",
     },
     {
       info: "وضعیت خدمت سربازی : معافیت تحصیلی",

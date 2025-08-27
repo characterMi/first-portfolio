@@ -16,7 +16,7 @@ const CustomizedDrawerHeader = () => {
           ابولفضل تقدسی
         </Typography>
         <Typography sx={{ fontSize: { xs: "1rem", sm: "1.5rem" } }}>
-          abolfazl2007fx@gmail.com
+          workabolfazltaghadosi@gmail.com
         </Typography>
       </Box>
     </Box>
